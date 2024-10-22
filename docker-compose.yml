@@ -1,0 +1,13 @@
+services:
+  postgres:
+    image: bitnami/postgresql:latest
+    ports:
+      - '5432:5432'
+    environment:
+      - POSTGRES_USER=some_user
+      - POSTGRES_PASSWORD=some_password
+      - POSTGRES_DB=desafiopicpay
+    volumes:
+      - postgres_data:/bitnami/postgresql
+volumes:
+  postgres_data:
