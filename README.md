@@ -129,7 +129,7 @@ dotnet ef database update
 
 ```bash
 # clonar o repositório
-git clone linkdorepositorio
+git clone https://github.com/bxzzxnx/DesafioPicPay
 cd DesafioPicPay
 dotnet restore
 
