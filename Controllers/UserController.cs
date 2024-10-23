@@ -19,7 +19,7 @@ public class UserController : ControllerBase
     [HttpPost]
     public async Task<IActionResult> RegistryUser([FromBody] UserDto request)
     {
-        if (request.WalletType != WalletType.USER || request.WalletType != WalletType.MERCHANT)
+        if (request.WalletType.GetHashCode() != 0 && request.WalletType.GetHashCode() != 1)
         {
             return BadRequest(ErrorMessages.WalletType);
         };
