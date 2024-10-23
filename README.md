@@ -41,7 +41,7 @@ Content-Type: application/json
   "email": "user@example.com",
   "document": "string",
   "balance": 0,
-  "walletType": "USER"
+  "walletType": "USER" # USER ou MERCHANT
 }
 ```
 
